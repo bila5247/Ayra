@@ -32,7 +32,7 @@ const Accountant = () => {
                         <img
                           alt
                           loading="lazy"
-                          width={114}
+                          width={160}
                           height={85}
                           decoding="async"
                           data-nimg={1}
@@ -402,7 +402,7 @@ const Accountant = () => {
                   marginTop: 30,
                 }}
               >
-                <Link to="/job-Graphic-Designer">
+                <Link to="/job-Accountant">
                   <button className="meet_button">Apply Now</button>
                 </Link>
               </div>

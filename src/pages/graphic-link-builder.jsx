@@ -19,6 +19,10 @@ import Career15 from "../assets/www.biotechpackages.com/images/icons/15.png";
 import Career16 from "../assets/www.biotechpackages.com/images/icons/16.png";
 
 const graphicdesignerbuilder = () => {
+  const handleCall = () => {
+    window.location.href = "tel:+923467133632";
+  };
+
   return (
     <>
       
@@ -33,7 +37,7 @@ const graphicdesignerbuilder = () => {
                         <img
                           alt
                           loading="lazy"
-                          width={114}
+                          width={160}
                           height={85}
                           decoding="async"
                           data-nimg={1}

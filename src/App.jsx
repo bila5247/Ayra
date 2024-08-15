@@ -64,6 +64,7 @@ import Accountant from './pages/Accountant';
 import JobGraphicDesigner from './pages/jobgraphicdesigner'
 import JobProductStaff from './pages/jobproductstaff'
 import JobAccountant from './pages/jobaccountant'
+import Search from './components/Search';
 
 
 function App() {
@@ -87,6 +88,7 @@ function App() {
             </Layout>
           }
         />
+
         <Route path="/custom" element={<Layout ><CustomPackaging /></Layout>} />
         <Route path="/sticker" element={<Layout><StickersLabels /></Layout>} />
         <Route path="/about" element={<Layout><About /></Layout>} />
@@ -141,6 +143,8 @@ function App() {
         <Route path="/job-Product-Staff" element={<JobProductStaff />} />
         <Route path="/job-Accountant" element={<JobAccountant />} />
         
+
+        <Route path='/search' element={<Search/>} />
 
 
       </Routes>

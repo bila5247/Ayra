@@ -5,6 +5,9 @@ import Logo from "../Custom/images/logo.png";
 import searchIcon from "../Custom/images/search.png";
 import Footer from "../../components/Footer";
 const Tuckboxes = () => {
+  const handleCall = () => {
+    window.location.href = "tel:+923467133632";
+  };
   return (
     <>
       <div className="main_headers">
@@ -18,7 +21,7 @@ const Tuckboxes = () => {
                       <img
                         alt=""
                         loading="lazy"
-                        width="114"
+                        width="160"
                         height="85"
                         decoding="async"
                         data-nimg="1"
@@ -78,7 +81,7 @@ const Tuckboxes = () => {
                       </div>
                     </div>
                     <div className="search_fields false">
-                      <div className="search_icon">
+                      {/* <div className="search_icon">
                         <img
                           alt="search"
                           loading="lazy"
@@ -89,12 +92,12 @@ const Tuckboxes = () => {
                           src={searchIcon}
                           style={{ color: "transparent" }}
                         />
-                      </div>
-                      <Link to="tel: 923103330109">
+                      </div> */}
+                      <Link to="https://api.whatsapp.com/send?phone=+923467133632&amp;text=Salam.">
                         <button
                           type="button"
                           className="call_us btn btn-primary"
-                          style={{ backgroundColor: "black", color: "white" }}
+                          onClick={handleCall}
                         >
                           Contact Us
                         </button>

@@ -1,0 +1,107 @@
+/* .search_fields {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+   */
+  /* .search-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  } */
+  
+  .search_icon {
+    cursor: pointer;
+    /* display: inline-block;    */
+  }
+  
+  .search-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px; /* Specific height */
+    padding: 0 15px; /* Padding on left and right */
+    border: none; /* No border around the input */
+    opacity: .39;
+    outline: none; /* Remove default outline */
+    background-color: #e8e8e8; /* White background */
+    border-bottom: 2px solid #ccc; /* Horizontal line */
+    font-size: 16px; /* Font size */
+    color: #333; /* Text color */
+    box-sizing: border-box; /* Include padding in width */
+    transition: border-color 0.3s ease-in-out; /* Smooth transition for border color */
+    z-index: 9999; /* Ensure it appears above other elements */
+  }
+  
+  .search-bar:focus {
+    border-bottom-color: #ccc; /* Change border color on focus */
+    padding: 200px;
+  }
+  
+  .search-bar::placeholder {
+    color: #999; /* Color of placeholder text */
+    /* padding: 200px; */
+    font-family: inherit ; /* Italic placeholder text */
+    font-size: 50px;
+  }
+  
+  .search-container:hover .search_icon img {
+    filter: brightness(0); /* Turns the image black */
+}
+
+  .search-bar:hover {
+    border-bottom-color: #999; /* Change border color on hover */
+    padding: 200px;
+    font-size: 50px;
+
+  }
+  @keyframes slideDown {
+    from {
+      transform: scaleY(0);
+    }
+    to {
+      transform: scaleY(1);
+    }
+  }
+  
+  .search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    max-height: 200px;
+    overflow-x: auto;
+    z-index: 1000;
+  }
+  
+  .search-results ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .search-results li {
+    padding: 5px 10px;
+  }
+  
+  .search-results li a {
+    text-decoration: none;
+    color: black;
+    display: block; /* Ensures the entire area is clickable */
+  }
+  
+  .search-results li a:hover {
+    background-color: #f0f0f0;
+  }
+  .search-img {
+    position: absolute;
+    right: 10px; /* Adjust as needed */
+    width: 60px; /* Adjust as needed */
+    height: 60px; /* Adjust as needed */
+    pointer-events: all; /* Allows clicks to pass through the image */
+    top: 100px;
+  }

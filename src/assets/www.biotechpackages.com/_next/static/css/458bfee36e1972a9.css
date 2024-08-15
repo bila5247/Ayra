@@ -1354,7 +1354,10 @@
 .main-banner .banner-data h2 {
     font-size: clamp(30px, 3vw, 50px);
     color: #fff;
-    font-family: "Lobster Two", sans-serif !important;
+    font-family: 'Sugar Magic - Personal Use Only Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Sugar Magic - Personal Use Only Regular'), url('SugarMagicPersonalUseOnly-jEMYO.woff') format('woff');
     margin-bottom: 15px;
 }
 

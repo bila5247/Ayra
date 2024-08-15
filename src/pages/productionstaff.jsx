@@ -32,7 +32,7 @@ const ProductionStaff = () => {
                         <img
                           alt
                           loading="lazy"
-                          width={114}
+                          width={160}
                           height={85}
                           decoding="async"
                           data-nimg={1}
@@ -402,7 +402,7 @@ const ProductionStaff = () => {
                   marginTop: 30,
                 }}
               >
-                <Link to="/job-Graphic-Designer">
+                <Link to="/job-Product-Staff">
                   <button className="meet_button">Apply Now</button>
                 </Link>
               </div>

@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../Custom/images/logo.png';
 import searchIcon from '../Custom/images/search.png';
 import Footer from '../../components/Footer';
 const Paperlabels = () => {
+  const handleCall = () => {
+    window.location.href = "tel:+923467133632";
+  };
+
+  
     return (
         <>
           
@@ -18,7 +23,7 @@ const Paperlabels = () => {
                       <img
                         alt=""
                         loading="lazy"
-                        width="114"
+                        width="160"
                         height="85"
                         decoding="async"
                         data-nimg="1"
@@ -78,7 +83,7 @@ const Paperlabels = () => {
                       </div>
                     </div>
                     <div className="search_fields false">
-                      <div className="search_icon">
+                      {/* <div className="search_icon">
                         <img
                           alt="search"
                           loading="lazy"
@@ -89,12 +94,12 @@ const Paperlabels = () => {
                           src={searchIcon}
                           style={{ color: "transparent" }}
                         />
-                      </div>
-                      <Link to="tel: 923103330109">
+                      </div> */}
+                      <Link to="https://api.whatsapp.com/send?phone=+923467133632&amp;text=Salam.">
                         <button
                           type="button"
                           className="call_us btn btn-primary"
-                          style={{ backgroundColor: "black", color: "white" }}
+                          onClick={handleCall}
                         >
                           Contact Us
                         </button>
@@ -116,7 +121,9 @@ const Paperlabels = () => {
                     <div
                       className="srach_data"
                       style={{ display: "flex" }}
-                    ></div>
+                    >
+
+                    </div>
                     <img
                       alt="search"
                       loading="lazy"
